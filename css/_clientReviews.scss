@@ -1,0 +1,38 @@
+.client-reviews {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 0;
+  
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 2rem;
+  
+      .title {
+        font-size: 1.8rem;
+        text-transform: capitalize;
+      }
+  
+    }
+  
+    .client-content {
+      display: flex;
+      gap: 1.5rem;
+      overflow: hidden;
+      padding-inline: 2rem;
+      scroll-behavior: smooth;
+  
+      // tu peux ajouter ici si tu veux une animation de glisse ou transition visuelle
+      article {
+        flex: 0 0 auto; // pour assurer le slide
+        max-width: 330px;
+        gap: 40px;
+        &:hover{
+            transition: transform .3s ease;
+            transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  

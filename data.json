@@ -1,0 +1,175 @@
+[
+        {
+            "id": 1,
+            "name": "Délice d'Alloco",
+            "description": "Tranches dorées de bananes plantains servies avec une sauce épicée ou des oignons caramélisés.",
+            "price": 1000,
+            "image": "./images/plat/alloco.png",
+            "category": "entrée",
+            "type" : "popular"
+        },
+        {
+            "id": 2,
+            "name": "Garba Royal",
+            "description": "Attiéké ivoirien accompagné de thon frit croustillant, piment et oignons frais.",
+            "price": 1500,
+            "image": "./images/plat/garba.png",
+            "category": "plat",
+            "type" : "popular"
+
+        },
+        {
+            "id": 3,
+            "name": "Croquettes Dorées de Maïs",
+            "description": "Boulettes croustillantes à base de farine de maïs et d'épices africaines.",
+            "price": 1200,
+            "image": "./images/plat/Croquettes Dorées.png",
+            "category": "entrée"
+        },
+        {
+            "id": 4,
+            "name": "Riz Jolof Festif",
+            "description": "Riz mijoté à la tomate, une spécialité ouest-africaine pleine de saveurs.",
+            "price": 2000,
+            "image": "./images/plat/Riz Jolof Festif.png",
+            "category": "graniture",
+            "type" : "popular"
+
+        },
+        {
+            "id": 5,
+            "name": "Cocktail Tropical Évasion",
+            "description": "Mélange maison de fruits exotiques sans alcool, un vrai voyage gustatif.",
+            "price": 1000,
+            "image": "./images/plat/Cocktail Tropical Évasion.png",
+            "category": "boisson"
+        },
+        {
+            "id": 6,
+            "name": "Brochettes de Foie Épicées",
+            "description": "Foie de bœuf grillé en brochettes, accompagné d'une sauce relevée.",
+            "price": 1500,
+            "image": "./images/plat/Brochettes de Foie Épicées.png",
+            "category": "entrée"
+        },
+        {
+            "id": 7,
+            "name": "Placali Gourmand",
+            "description": "Pâte de manioc fermentée servie avec une sauce gombo glissante.",
+            "price": 2200,
+            "image": "./images/plat/Placali.png",
+            "category": "plat",
+            "type" : "popular"
+
+        },
+        {
+            "id": 8,
+            "name": "Jus de Gingembre Piquant",
+            "description": "Boisson rafraîchissante et épicée à base de gingembre frais.",
+            "price": 700,
+            "image": "./images/plat/Jus de Gingembre Piquant.png",
+            "category": "boisson"
+        },
+        {
+            "id": 9,
+            "name": "Bananes Flambées au Rhum",
+            "description": "Bananes caramélisées au sucre et flambées avec une touche de rhum.",
+            "price": 1000,
+            "image": "./images/plat/Bananes Flambées au Rhum.png",
+            "category": "dessert",
+            "type" : "popular"
+
+        },
+        {
+            "id": 10,
+            "name": "Poulet Braisé Savoureux",
+            "description": "Poulet tendre et juteux grillé au feu de bois, assaisonné à la perfection.",
+            "price": 2500,
+            "image": "./images/plat/Poulet Braisé Savoureux.png",
+            "category": "plat"
+        },
+        {
+            "id": 11,
+            "name": "Salade Fraîcheur Tropicale",
+            "description": "Mélange coloré d’ananas, mangue, papaye et pastèque, servi frais.",
+            "price": 1000,
+            "image": "./images/plat/Salade Fraîcheur Tropicale.png",
+            "category": "dessert"
+        },
+        {
+            "id": 12,
+            "name": "donnote sucré",
+            "description": "les fameux donnotes américain version ivoirien bien sucré, parfaites pour un dessert.",
+            "price": 600,
+            "image": "./images/plat/donnote.png",
+            "category": "dessert",
+            "type" : "popular"
+
+        },
+        {
+            "id": 13,
+            "name": "Riz au Gras Traditionnel",
+            "description": "Riz long mijoté avec des légumes, de l'huile et de la viande.",
+            "price": 1800,
+            "image": "./images/plat/Riz Gras.png",
+            "category": "plat"
+        },
+        {
+            "id": 14,
+            "name": "Jus de Bissap Fraîcheur",
+            "description": "Boisson rafraîchissante à base de fleurs d’hibiscus rouges.",
+            "price": 700,
+            "image": "./images/plat/Jus de Bissap.png",
+            "category": "boisson"
+        },
+        {
+            "id": 15,
+            "name": "Beignets Sucrés Ivoiriens",
+            "description": "Petits beignets ronds ivoiriens au goût sucré, parfaits pour une pause gourmande.",
+            "price": 500,
+            "image": "./images/plat/Beignets Sucrés Ivoiriens.png",
+            "category": "dessert"
+        },
+        {
+            "id": 16,
+            "name": "Soupe Kandia",
+            "description": "Soupe ivoirienne à base de gombo et de poisson fumé.",
+            "price": 2500,
+            "image": "./images/plat/Soupe Kandia.png",
+            "category": "plat"
+        },
+        {
+            "id": 17,
+            "name": "Foutou Banane",
+            "description": "Pâte de banane plantain accompagnée d'une sauce graine.",
+            "price": 3000,
+            "image": "./images/plat/Foutou Banane.png",
+            "category": "plat",
+            "type" : "popular"
+
+        },
+        {
+            "id": 18,
+            "name": "Attiéké Poisson",
+            "description": "Semoule de manioc servie avec du poisson braisé et des légumes.",
+            "price": 3500,
+            "image": "./images/plat/Attiéké Poisson.png",
+            "category": "plat"
+        },
+        {
+            "id": 19,
+            "name": "Jus de Tamarind",
+            "description": "Boisson sucrée et acidulée à base de tamarin.",
+            "price": 800,
+            "image": "./images/plat/Jus de Tamarind.png",
+            "category": "boisson"
+        },
+        {
+            "id": 20,
+            "name": "Gâteau de Manioc",
+            "description": "Dessert ivoirien à base de manioc râpé et de noix de coco.",
+            "price": 1200,
+            "image": "./images/plat/Gâteau de Manioc.png",
+            "category": "dessert"
+        }
+    ]

@@ -1,0 +1,93 @@
+#menu{
+    display : grid;
+    gap: 20px;
+    .filter{
+        display: grid;
+        gap: 10px;
+        position: sticky;
+        top: 57px;
+        background-color: $main-bg-color;
+        z-index: 80;
+        padding: 1rem 0;
+        .head{
+            .search{
+                border: 2px solid $btn-main-bg;
+                border-radius: 50px;
+                padding: 0.4rem;
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                max-height: 48px;
+                gap: 12px;
+
+                svg{
+                    &:active{
+                        transform: scale(.9);
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        path{
+                            fill: $btn-main-bg;
+                        }
+                    }
+                    path{
+                        fill: $main-text-color;
+                    }
+                }
+                input{
+                    width: 90%;
+                    min-height: 100%;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+            }
+        }
+        .filter-nav{
+            ul{
+                display : flex;
+                flex-wrap: wrap;
+                gap: clamp(15px, calc(1rem + 0.5vw), 31px );
+                 li{
+                    display: flex;
+                    align-items: center;
+                    max-width: 180px;
+                    gap: 10px;
+                    background-color: white;
+                    padding: 0.3em 
+                    1em;
+                    border-radius: 50px;
+                    min-width: max-content;
+                    font-weight: bold;
+
+                    letter-spacing: 1.2px;
+                    box-shadow: 0px 0px 4px hsl(0, 0%, 0%, 0.2);
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $btn-main-bg;
+                        color : white;
+
+                        svg{
+                            rect {
+                                fill: white;
+                            }
+                        }
+                    }
+                    img{
+                        max-height: 90%;
+                    }
+                 }
+            }
+        }
+    }
+    .products-container{
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 1rem 0;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "membres" : [
+        {
+            "images" : "./images/members/FOFANA ABDOULAYE.jpg",
+            "nom" : "FOFANA ABDOULAYE",
+            "desc" : "FOFANA ABDOULAYE est le chef cuisinier du restaurant. Il est responsable de la création des plats, de leur présentation et de la gestion de la qualité des repas. Avec sa passion pour la cuisine ivoirienne, il s'assure que chaque plat soit une expérience gastronomique unique."
+        },
+        {
+            "images" : "./images/members/GAUVIN NAOMI.jpg",
+            "nom" : "GAUVIN NAOMI",
+            "desc" : "GAUVIN NAOMI est la responsable du service en salle. Elle accueille les clients, les conseille sur le menu et veille à ce que l'expérience des clients soit agréable, en garantissant un service rapide et courtois."
+        },
+        {
+            "images" : "./images/members/HOUPHOUET JAURES.jpg",
+            "nom" : "HOUPHOUET JAURES",
+            "desc" : "HOUPHOUET JAURES est le responsable de la gestion des stocks et des commandes. Il s'assure que la cuisine dispose toujours des ingrédients nécessaires pour préparer les plats, tout en gérant les fournisseurs et le réapprovisionnement."
+        },
+        {
+            "images"  : "./images/members/KONÉ ZEÏNAB.jpg", 
+            "nom"  : "KONÉ ZEÏNAB",
+            "desc" : "KONÉ ZEÏNAB est la responsable des relations clients et des événements. Elle gère les réservations et organise des événements spéciaux pour le restaurant. Elle veille à ce que les clients passent un moment mémorable en dehors des repas."
+        },
+        {
+            "images" : "./images/members/SADIA GBONGUE.jpg",
+            "nom"  : "SADIA GBONGUE",
+            "desc" : "SADIA GBONGUE est responsable de la gestion administrative et des finances du restaurant. Elle supervise la comptabilité, les paiements, les factures et les rapports financiers, tout en veillant à ce que le restaurant soit en conformité avec les réglementations fiscales."
+        },
+        {
+            "images" : "./images/members/TRAORÉ DRISSA.jpg", 
+            "nom" : "TRAORÉ DRISSA",
+            "desc" : "TRAORÉ DRISSA est le responsable de la logistique et des opérations quotidiennes. Il veille à ce que tout fonctionne sans accroc, en supervisant la maintenance des équipements, l'organisation de la salle et le bon déroulement des services."
+        },
+        {
+            "images" : "./images/members/TRAORÉ FAKALY OUMAR.png.jpg",
+            "nom" : "TRAORÉ FAKALY",
+            "desc" : "TRAORÉ FAKALY est le patron et propriétaire du restaurant. En tant que leader, il prend les décisions stratégiques, gère les aspects financiers à long terme et assure que le restaurant reste compétitif et innovant. Il supervise l'ensemble du personnel et guide l'entreprise vers ses objectifs."
+        },
+        {
+            "images" : "./images/members/ESMEL RILAY.png",
+            "nom" : "ESMEL KEVIN RILAY",
+            "desc" : "ESMEL KEVIN RILAY est l'informaticien du restaurant. Il est responsable de la gestion des systèmes informatiques, du site web et de la mise en place de solutions digitales pour améliorer l'efficacité du service. Il veille à la sécurité des données et assure que toutes les plateformes numériques du restaurant fonctionnent parfaitement."
+        }
+    ]
+}

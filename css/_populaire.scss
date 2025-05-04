@@ -1,0 +1,33 @@
+.popular {
+  display: grid;
+  gap: 2rem;
+
+  .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 2rem;
+
+      .controler {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          
+      }
+  }
+
+  .content {
+      display: flex;
+      gap: 20px;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      padding-inline: 2rem;
+  }
+
+  a {
+      max-width: max-content;
+      justify-self: end;
+      padding-inline: 2rem;
+  }
+}

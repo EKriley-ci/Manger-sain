@@ -1,0 +1,12 @@
+.members{
+    display: grid;
+    overflow: hidden;
+
+    .userContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding: 0.5rem 2rem;
+        max-height: 440px;
+    }
+}

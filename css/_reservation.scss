@@ -1,0 +1,15 @@
+.reservation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+        max-width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "clients": [
+      {
+        "nom": "Aïcha",
+        "message": "Le meilleur attiéké que j’ai goûté, service rapide et chaleureux !",
+        "photo": "./images/client/Aicha.png",
+        "date": "2025-04-20"
+      },
+      {
+        "nom": "Yao",
+        "message": "Excellent ! J’ai adoré le garba, bien épicé comme j’aime.",
+        "photo": "./images/client/Yao.png",
+        "date": "2025-04-18"
+      },
+      {
+        "nom": "Fatou",
+        "message": "Le kedjenou était juste incroyable, je reviendrai c’est sûr !",
+        "photo": "./images/client/Fatou.png",
+        "date": "2025-04-15"
+      },
+      {
+        "nom": "Kouadio",
+        "message": "Ambiance conviviale, plats généreux, un vrai plaisir.",
+        "photo": "./images/client/Kouadio.png",
+        "date": "2025-04-14"
+      },
+      {
+        "nom": "Mariam",
+        "message": "Très bon rapport qualité-prix, mention spéciale pour le foutou !",
+        "photo": "./images/client/Mariam.png",
+        "date": "2025-04-10"
+      },
+      {
+        "nom": "Issouf",
+        "message": "Le poulet braisé était bien assaisonné, rien à dire !",
+        "photo": "./images/client/Issouf.png",
+        "date": "2025-04-09"
+      },
+      {
+        "nom": "Clarisse",
+        "message": "J’ai été bluffée par la qualité et le goût, bravo !",
+        "photo": "./images/client/Clarisse.png",
+        "date": "2025-04-08"
+      },
+      {
+        "nom": "Omah",
+        "message": "Super service client et plats savoureux. À refaire.",
+        "photo": "./images/client/omah.png",
+        "date": "2025-04-06"
+      },
+      {
+        "nom": "Djénéba",
+        "message": "Mon tchep était parfait, les portions sont généreuses.",
+        "photo": "./images/client/Djénéba.png",
+        "date": "2025-04-05"
+      },
+      {
+        "nom": "Landry",
+        "message": "Livraison rapide et plat bien chaud, je recommande !",
+        "photo": "./images/client/Landry.png",
+        "date": "2025-04-04"
+      },
+      {
+        "nom": "Zeynab",
+        "message": "Très bon goût et belle présentation, je valide fort !",
+        "photo": "./images/client/Zeynab.png",
+        "date": "2025-04-03"
+      },
+      {
+        "nom": "Michel",
+        "message": "J’ai commandé pour toute la famille, tout le monde a aimé !",
+        "photo": "./images/client/Michel.png",
+        "date": "2025-04-02"
+      },
+      {
+        "nom": "Tatiana",
+        "message": "Le goût du pays en plein cœur de la ville, bravo l’équipe !",
+        "photo": "./images/client/Tatiana.png",
+        "date": "2025-04-01"
+      },
+      {
+        "nom": "Amadou",
+        "message": "Mention spéciale pour l’accueil et la gentillesse du personnel.",
+        "photo": "./images/client/Amadou.png",
+        "date": "2025-03-30"
+      },
+      {
+        "nom": "Gloria",
+        "message": "Le jus de bissap était délicieux, et le poisson braisé au top.",
+        "photo": "./images/client/Gloria.png",
+        "date": "2025-03-28"
+      }
+    ]
+  }
+  

@@ -1,0 +1,67 @@
+footer{
+    background: #FFF6ED;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        gap: 1.4rem;
+        .head{
+            display: flex;
+            justify-content: space-between;
+            aside{
+                display: grid;
+                gap: 1rem;
+                .footer-nav{
+                    ul{
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+            }
+            form{
+                display: grid;
+                gap: 1rem;
+                
+                .mail{
+                    display: grid;
+                    grid-template-columns: 1fr 120px;
+                    gap: 10px;
+                    justify-content: space-between;
+
+                    input{
+                        background: none;
+                        border: 2px solid $main-text-color;
+                        border-radius: 10px;
+                        padding-inline: 10px;
+                        outline: none;
+
+                    }
+                }
+                p{
+                    a{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        hr{
+            color: $main-text-color;
+
+        }
+        .foot{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            ul{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}

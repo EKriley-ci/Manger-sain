@@ -1,0 +1,41 @@
+.services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    .services-images{
+        display : grid;  
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .chef{
+            z-index: 2;
+            max-width: 80%;
+            transform: translateY(-16px) translateX(35px) rotate(0deg);
+        }
+        .chef-bg{
+            min-width: 100%;
+            animation: rotate 40s infinite;
+        }
+    }
+    .aside-content{
+        display: flex;
+        flex-direction:column;
+        gap: 10px;
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            li{
+                display: flex;
+                align-items: flex-end;
+                gap: 5px;
+            }
+        }
+    }
+}
