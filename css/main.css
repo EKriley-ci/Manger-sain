@@ -445,7 +445,7 @@ header .pc-menu .header-nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 320px;
+    min-width: 90vw;
   }
   header .android .mobile-navBar .burger {
     display: grid;
