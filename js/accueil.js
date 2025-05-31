@@ -33,19 +33,16 @@ navItems.forEach((item, index) => {
 startSlideShow();
 
 
+function toggleMobileMenu() {
+  const burgerBtn = document.querySelector(".burger");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-function newFunction() {
-    const burgerBtn = document.querySelector(".burger");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    burgerBtn.addEventListener('click', () => {
-        burgerBtn.classList.toggle('activeBurger');
-        if (burgerBtn.classList.contains("activeBurger")) {
-            mobileMenu.style.top = "55px";
-        } else {
-            mobileMenu.style.top = "-1000000px";
-        }
-    });
+  if (!burgerBtn || !mobileMenu) return; // sécurité si les éléments n’existent pas
+
+  burgerBtn.addEventListener("click", () => {
+    burgerBtn.classList.toggle("activeBurger");
+    mobileMenu.classList.toggle("open");
+  });
 }
 
-newFunction();
-
+toggleMobileMenu();

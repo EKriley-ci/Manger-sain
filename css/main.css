@@ -409,7 +409,7 @@ header .android {
 header .pc-menu {
   display: flex;
   align-items: center;
-  justify-content: space-between !important;
+  justify-content: space-between;
   min-width: 100%;
 }
 header .pc-menu .logo {
@@ -432,70 +432,75 @@ header .pc-menu .header-nav ul {
   align-items: center;
   gap: clamp(16px, 0.5em + 1.2vw, 32px);
 }
-
 @media (max-width: 767px) {
   header .pc-menu {
     display: none;
   }
   header .android {
-    display: grid;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   header .android .mobile-navBar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    min-width: 90vw;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
   }
   header .android .mobile-navBar .burger {
     display: grid;
-    max-width: 48px;
-    max-height: 48px;
-    gap: 3px;
-    justify-content: space-between;
+    gap: 4px;
     cursor: pointer;
+    padding: 0.5rem;
   }
   header .android .mobile-navBar .burger .bar {
     width: 28px;
-    height: 2.5px;
+    height: 3px;
     background: #333;
+    transition: all 0.3s ease-in-out;
   }
   header .android .mobile-menu {
-    min-width: 375px;
-    text-align: center;
-    position: absolute;
+    width: 100%;
     background: #fff8f1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
     padding: 1rem;
-    top: -1000000px;
-    transition: top 0.3s ease-in;
-    right: -27px;
+    transform: translateY(-200%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   header .android .mobile-menu .nav {
     display: grid;
-    gap: 10px;
+    gap: 1rem;
   }
   header .android .mobile-menu .nav ul {
     display: grid;
-    gap: 10px;
+    gap: 0.8rem;
   }
   header .android .mobile-menu .nav .actionsBtn {
-    min-width: 70%;
+    width: 70%;
+    margin: auto;
+  }
+  header .android .mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 
-.activeBurger .bar {
-  background: #F9B233 !important;
+.activeBurger .bar1 {
+  transform: rotate(45deg) translateY(10px);
 }
 .activeBurger .bar2 {
-  display: none;
+  opacity: 0;
 }
 .activeBurger .bar3 {
-  transform: rotate(-45deg) translateY(-4px);
-  transition: transform 0.3s ease-in;
-}
-.activeBurger .bar1 {
-  transform: rotate(45deg) translateY(5px);
-  transition: transform 0.3s ease-in;
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 .hero {
