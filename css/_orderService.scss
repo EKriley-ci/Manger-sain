@@ -1,7 +1,10 @@
 .orderService{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);   
     align-items: center;
+    @include mobile{
+        grid-template-columns: repeat(1, 1fr);
+    }
     aside{
         background : #FAE4C3;
         min-height : 100%;

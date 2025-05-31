@@ -1,7 +1,9 @@
 .popular {
   display: grid;
-  gap: 2rem;
-
+  gap: 2vw;
+@include mobile{
+    max-width: fit-content;
+}
   .head {
       display: flex;
       align-items: center;
@@ -12,7 +14,10 @@
           display: flex;
           align-items: center;
           gap: 1rem;
-
+        @include mobile{
+            display: none;
+            gap: 40px;
+        }
           
       }
   }
@@ -23,6 +28,15 @@
       overflow: hidden;
       scroll-behavior: smooth;
       padding-inline: 2rem;
+      @include mobile{
+        padding-inline: none;
+        max-width: 360px;
+        max-height: none;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        // justify-content: center;
+      }
   }
 
   a {

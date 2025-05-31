@@ -3,6 +3,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: center;
+    @include mobile{
+        grid-template-columns: 1fr;
+        max-width: 375px;
+    }
     .services-images{
         display : grid;  
         align-items: center;
@@ -27,10 +31,15 @@
         display: flex;
         flex-direction:column;
         gap: 10px;
-
+    @include mobile{
+        padding: 1rem 2rem;
+    }
         ul{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            @include mobile{
+                grid-template-columns: 1fr;
+            }
             li{
                 display: flex;
                 align-items: flex-end;

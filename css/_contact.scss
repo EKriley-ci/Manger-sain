@@ -1,37 +1,84 @@
-.contact-hero{
+// Améliorations pour la version mobile de la page contact
+
+.contact-hero {
     background: url("../images/contact-hero\ bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 990px;
     min-height: 55vh;
+    
+    @include mobile {
+        background-size: cover;
+        min-height: 40vh;
+        padding: 1rem;
+    }
+    
     display: grid;
-    .hero-content{
+    
+    .hero-content {
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: fit-content;
-        .hero-content-text{
-            text-align : center;
+        
+        .hero-content-text {
+            text-align: center;
             max-width: 50%;
-
+            
+            @include mobile {
+                max-width: 100%;
+                padding: 0 1rem;
+            }
+            
+            h1 {
+                @include mobile {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            
+            p {
+                @include mobile {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
+            }
         }
     }
-
 }
-.restaurant-info{
-    display : grid;
-    grid-template-columns : repeat(2, 560px);
+
+.restaurant-info {
+    display: grid;
+    grid-template-columns: repeat(2, 560px);
     max-width: fit-content;
     justify-self: center;
-    gap : 40px;
+    gap: 40px;
     overflow: visible;
-    .info-content{
-        display : grid;
-        grid-template-columns : repeat(2, 200px);
+    padding: 2rem;
+    
+    @include mobile {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+        justify-self: stretch;
+    }
+     
+    .info-content {
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
         grid-template-rows: repeat(2, 150px) 230px;
         gap: 20px;
         max-width: fit-content;
-        .info-box{
+        
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto) 250px;
+            max-width: 100%;
+            gap: 1rem;
+        }
+        
+        .info-box {
             background-color: #FAE4C3;
             display: flex;
             flex-direction: column;
@@ -39,60 +86,208 @@
             justify-content: center;
             gap: 10px;
             border-radius: 20px;
+            padding: 1rem;
+            
+            @include mobile {
+                padding: 1.5rem 1rem;
+                min-height: 120px;
+            }
+            
+            .icon {
+                @include mobile {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            
+            p {
+                @include mobile {
+                    font-size: 0.9rem;
+                    text-align: center;
+                    margin: 0;
+                    
+                    &:first-of-type {
+                        font-weight: bold;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
         }
 
-        iframe{
+        iframe {
             border-radius: 20px;
             grid-column: 1/2;
+            
+            @include mobile {
+                grid-column: 1;
+                width: 100%;
+                height: 250px;
+                margin-top: 1rem;
+            }
         }
     }
-    form{
+    
+    form {
         display: grid;
         align-items: center;
         grid-template-rows: repeat(7, 1fr);
         gap: 10px;
         height: 100%;
         max-height: 615px;
-        h2{
+        
+        @include mobile {
+            grid-template-rows: auto;
+            max-height: none;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
             color: #F9B233;
             font-weight: 500;
             font-size: 1.9rem;
             letter-spacing: 2px;
+            
+            @include mobile {
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        > p {
+            @include mobile {
+                font-size: 0.9rem;
+                line-height: 1.4;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
         }
 
-        .item{
+        .item {
             display: flex;
             flex-direction: column;
             gap: 5px;
 
-            label{
+            label {
                 font-weight: bold;
                 text-transform: capitalize;
-
+                
+                @include mobile {
+                    font-size: 0.9rem;
+                    margin-bottom: 0.3rem;
+                }
             }
-            input, textarea, select{
+            
+            input, textarea, select {
                 padding: 0.5rem 1rem;
                 border: 0.4px solid #3d110f46;
                 background-color: transparent;
                 border-radius: 10px;
                 outline: none;
+                
+                @include mobile {
+                    padding: 0.75rem 1rem;
+                    font-size: 1rem;
+                    border: 1px solid #3d110f46;
+                }
             }
            
-            textarea{
+            textarea {
                 min-height: 120px;
+                resize: vertical;
+                
+                @include mobile {
+                    min-height: 100px;
+                }
+            }
+            
+            select {
+                @include mobile {
+                    appearance: none;
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+                    background-repeat: no-repeat;
+                    background-position: right 1rem center;
+                    background-size: 1rem;
+                    padding-right: 3rem;
+                }
+            }
+        }
+        
+        .primary-btn {
+            @include mobile {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+                width: 100%;
             }
         }
     }
 }
 
+// Améliorations générales pour mobile
+@include mobile {
+    main {
+        padding: 0;
+    }
+    
+    // Espacement entre les sections
+    .contact-hero + .restaurant-info {
+        margin-top: 2rem;
+    }
+    
+    // Animation d'apparition pour mobile
+    .scroll-animation {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+        
+        &.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+// Styles pour les erreurs de validation (déjà présents mais améliorés pour mobile)
 .error {
     color: crimson;
     font-size: 0.8rem;
     margin-top: 4px;
     display: block;
-  }
-  
-  .input-error {
+    
+    @include mobile {
+        font-size: 0.75rem;
+    }
+}
+
+.input-error {
     border: 1px solid crimson;
-  }
-  
+    
+    @include mobile {
+        border-width: 2px;
+    }
+}
+
+// Améliorations pour l'accessibilité mobile
+@include mobile {
+    // Augmenter la zone de clic pour les éléments interactifs
+    .info-box {
+        min-height: 44px; // Recommandation d'accessibilité mobile
+    }
+    
+    // Améliorer la lisibilité
+    input, textarea, select {
+        font-size: 16px; // Évite le zoom automatique sur iOS
+    }
+    
+    // Espacement tactile approprié
+    .primary-btn {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+}

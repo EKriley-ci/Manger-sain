@@ -1,6 +1,10 @@
+@import 'mixing';
+
 header{
+  .android{
+    display:none;
+  }
     display: flex;
-    min-width: 100%;
     justify-content: space-between;
     align-items: center;
     position: sticky;
@@ -8,7 +12,13 @@ header{
     z-index: 99;
     background-color: $main-bg-color;
     padding-inline: $side-padding;
-    .logo{
+  .pc-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    min-width: 100%;
+
+        .logo{
       &:hover{
         path{
             transition: fill .3s ease-in;
@@ -31,4 +41,75 @@ header{
             gap: clamp(calc(32px/2), calc(0.5em + 1.2vw), 32px);
         }
     }
+  }
+}
+header{
+  @include mobile{
+    .pc-menu{
+      display: none;
+    }
+    .android{
+      display:grid;
+      position: relative;
+      .mobile-navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 320px;
+        .burger{
+          display:grid;
+          max-width:48px;
+          max-height:48px;
+          gap:3px;
+          justify-content: space-between;
+          cursor:pointer;
+          .bar{
+            width:28px;
+            height:2.5px;
+            background: #333;
+          }
+        }
+      }
+      .mobile-menu{
+        min-width: 375px;
+        text-align: center;
+        position: absolute;
+        background: #fff8f1;
+        padding: 1rem;
+        // top: 60px;
+        top: -1000000px;
+        transition: top .3s ease-in;
+        right: -27px;
+        .nav{
+          display: grid;
+          gap: 10px;
+          ul{
+            display: grid;
+            gap: 10px;
+          }
+          .actionsBtn{
+            min-width:70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.activeBurger{
+    .bar{
+       background: #F9B233 !important;
+     }
+      .bar2{
+       display: none;
+
+    }
+     .bar3{
+       transform: rotate(-45deg) translateY(-4px);
+       transition: transform .3s ease-in;
+     }
+    .bar1{
+       transform: rotate(45deg) translateY(5px);
+       transition: transform .3s ease-in;
+     }
 }

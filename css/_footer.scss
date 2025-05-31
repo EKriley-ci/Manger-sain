@@ -1,6 +1,6 @@
 footer{
     background: #FFF6ED;
-    padding: 2rem;
+    padding: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,6 +13,9 @@ footer{
         .head{
             display: flex;
             justify-content: space-between;
+            @include mobile{
+                flex-direction: column;
+            }
             aside{
                 display: grid;
                 gap: 1rem;
@@ -20,6 +23,9 @@ footer{
                     ul{
                         display: flex;
                         gap: 20px;
+                        @include mobile{
+                            flex-wrap: wrap;
+                        }
                     }
                 }
             }
@@ -32,7 +38,7 @@ footer{
                     grid-template-columns: 1fr 120px;
                     gap: 10px;
                     justify-content: space-between;
-
+                    
                     input{
                         background: none;
                         border: 2px solid $main-text-color;
@@ -57,10 +63,20 @@ footer{
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-
+            @include mobile{
+                flex-direction: column;
+                align-items: start;
+            }
+                @include mobile{
+        padding: 1rem 2rem;
+    }
             ul{
                 display: flex;
                 gap: 20px;
+                @include mobile{
+                    flex-direction: column;
+                    text-align: start;
+                }   
             }
         }
     }

@@ -1,10 +1,18 @@
 .members{
     display: grid;
     overflow: hidden;
-
+    @include mobile{
+        max-width: 370px;
+        .title{
+            font-size: 1.2rem;
+        }
+    }
     .userContainer{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
         gap: 40px;
         padding: 0.5rem 2rem;
         max-height: 440px;
