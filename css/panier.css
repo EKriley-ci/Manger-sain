@@ -1,0 +1,514 @@
+/* Styles pour la page panier */
+.panier-hero {
+  background: linear-gradient(135deg, #f9b233 0%, #c78e28 100%);
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.panier-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.panier-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.panier-content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .panier-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Panier vide */
+.panier-vide {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  grid-column: 1 / -1;
+}
+
+.vide-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.panier-vide h3 {
+  margin-bottom: 0.5rem;
+  color: #3d110f;
+}
+
+.panier-vide p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Articles du panier */
+.panier-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article-carte {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .article-carte {
+    grid-template-columns: 80px 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+.article-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .article-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-details h4 {
+  margin-bottom: 0.5rem;
+  color: #3d110f;
+  text-transform: capitalize;
+}
+
+.article-prix {
+  font-weight: bold;
+  color: #f9b233;
+  margin-bottom: 0.5rem;
+}
+
+.article-prix::after {
+  content: " FCFA";
+}
+
+.quantite-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .quantite-controls {
+    margin-top: 1rem;
+    grid-column: 1 / -1;
+    justify-content: space-between;
+  }
+}
+
+.btn-quantite {
+  background: #f9b233;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-quantite:hover {
+  background: #c78e28;
+}
+
+.btn-quantite:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.quantite-input {
+  width: 50px;
+  text-align: center;
+  border: 2px solid #f9b233;
+  border-radius: 5px;
+  padding: 0.25rem;
+  font-weight: bold;
+}
+
+.btn-supprimer {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-supprimer:hover {
+  background: #c82333;
+}
+
+@media (max-width: 768px) {
+  .btn-supprimer {
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Résumé de commande */
+.commande-resume {
+  position: sticky;
+  top: 100px;
+}
+
+.resume-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-card h3 {
+  margin-bottom: 1.5rem;
+  color: #3d110f;
+  text-align: center;
+}
+
+.resume-details {
+  margin-bottom: 1.5rem;
+}
+
+.resume-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.resume-line.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #3d110f;
+}
+
+.resume-line span:last-child {
+  color: #f9b233;
+  font-weight: bold;
+}
+
+.actions-commande {
+  text-align: center;
+}
+
+.actions-commande .primary-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  color: #3d110f;
+  margin: 0;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-modal:hover {
+  color: #f9b233;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* Options de service */
+.options-service h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3d110f;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .service-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.option-card {
+  background: #fbebd6;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.option-card:hover {
+  border-color: #f9b233;
+  transform: translateY(-5px);
+}
+
+.option-card.active {
+  border-color: #f9b233;
+  background: #f9b233;
+  color: white;
+}
+
+.option-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.option-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.option-card p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Scanner QR */
+.qr-scanner {
+  text-align: center;
+}
+
+.qr-demo {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px dashed #f9b233;
+}
+
+.qr-demo img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+  border-radius: 10px;
+}
+
+.qr-demo p {
+  color: #666;
+  font-weight: bold;
+}
+
+/* Formulaire de livraison */
+.livraison-form h3 {
+  margin-bottom: 1.5rem;
+  color: #3d110f;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #3d110f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f9b233;
+}
+
+/* Confirmation */
+.confirmation-success {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-success h3 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.numero-commande {
+  background: #fbebd6;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.actions-confirmation {
+  text-align: center;
+}
+
+.actions-confirmation .primary-btn {
+  padding: 1rem 2rem;
+}
+
+/* Animation pour les articles ajoutés */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.article-carte.nouveau {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Badge de compteur sur l'icône panier */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #dc3545;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Style pour le lien panier dans le header */
+.panier-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f9b233;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.panier-link:hover {
+  background: #c78e28;
+  color: white;
+  transform: translateY(-2px);
+}
